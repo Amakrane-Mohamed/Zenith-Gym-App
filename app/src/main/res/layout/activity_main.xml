@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_pic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="38dp">
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/appicon"
+            android:layout_marginEnd="7dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/heavy"
+            android:text="Zenith"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center|bottom"
+        android:background="@drawable/rounded_bg"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/heavy"
+            android:text="Increase your target \n   to be healthier to \n continue exercising"
+            android:textColor="#E9E9E9"
+            android:layout_marginLeft="10dp"
+            android:textSize="32sp"
+            android:paddingTop="2dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=" This application can improve yourself \n to have a healthy lifestyle by exercising"
+            android:textColor="#6D6D6D"
+            android:textSize="16sp"
+            android:paddingLeft="38dp"
+            android:paddingBottom="13dp"/>
+
+        <Button
+            android:id="@+id/get_started_button"
+            android:layout_width="345dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#ABE05E"
+            android:fontFamily="@font/heavy"
+            android:text="Get started"
+            android:textColor="@color/grii"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="top|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Register"
+                android:textSize="18sp"
+                android:textColor="@color/gree"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
